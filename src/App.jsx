@@ -1,3 +1,5 @@
+import languages from "./components/Languages";
+
 function App() {
   return <></>;
 }
