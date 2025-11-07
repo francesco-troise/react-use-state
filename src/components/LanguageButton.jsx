@@ -1,13 +1,14 @@
 export default function LanguageButton({ language, isActive, onClick }) {
   return (
-    <button>
+    <button
+      // Al click viene chiamata la funzione
       onClick={onClick}
-      {/*Al click il bottone, esegue la funzione passata dal componente padre*/}
+      // se isActive è attivo → btn-warning (giallo)
+      // altrimenti → btn-primary (blu)
       className={"btn me-2 " + (isActive ? "btn-warning" : "btn-primary")}
-      {/*Se è attivo allora bottone giallo */}
-      {/*Se NON è attivo allora bottone blu*/}
+    >
+      {/* Mostra il titolo del linguaggio sul bottone */}
       {language.title}
-      {/* Mostra il titolo del linguaggio */}
     </button>
   );
 }
